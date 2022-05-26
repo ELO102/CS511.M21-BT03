@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CS511.M21_BT03
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
-        public Form1()
+        public Game()
         {
             InitializeComponent();
         }
+
+        private void main_panel_order()
+        {
+            this.Controls.Add(this.panel_homepage);
+        }
+
     }
 }

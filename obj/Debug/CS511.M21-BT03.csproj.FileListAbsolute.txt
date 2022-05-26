@@ -1,0 +1,11 @@
+E:\Study\CS511.M21\CS511.M21-BT03\bin\Debug\CS511.M21-BT03.exe.config
+E:\Study\CS511.M21\CS511.M21-BT03\bin\Debug\CS511.M21-BT03.exe
+E:\Study\CS511.M21\CS511.M21-BT03\bin\Debug\CS511.M21-BT03.pdb
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.csproj.AssemblyReference.cache
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.csproj.SuggestedBindingRedirects.cache
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21_BT03.Game.resources
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21_BT03.Properties.Resources.resources
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.csproj.GenerateResource.cache
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.csproj.CoreCompileInputs.cache
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.exe
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.pdb
