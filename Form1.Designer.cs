@@ -493,6 +493,7 @@
             this.button_hint.TabIndex = 4;
             this.button_hint.Text = "Gợi ý";
             this.button_hint.UseVisualStyleBackColor = true;
+            this.button_hint.Click += new System.EventHandler(this.btnGoiY_Click);
             // 
             // label_wave
             // 

@@ -280,6 +280,7 @@ namespace CS511.M21_BT03
             TongDiem = 0;
             TongXu = 200;
             TimeLeft = 180;
+            timer1.Start();
             label_score.Text = "Điểm:" + TongDiem.ToString();
             label_coin.Text = "Xu: " + TongXu.ToString();
             ListPtr = new string[4];
@@ -338,6 +339,7 @@ namespace CS511.M21_BT03
             ListTxt[0].Click += DuoiHinhBatChu_Click;
             ListTxt[0].ReadOnly = true;
             ListTxt[0].Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ListTxt[0].TextAlign = HorizontalAlignment.Center;
             panel_gameplay.Controls.Add(ListTxt[0]);
             for (int i = 1; i < ListTxt.Length; i++)
             {
@@ -348,6 +350,7 @@ namespace CS511.M21_BT03
                 ListTxt[i].Click += DuoiHinhBatChu_Click;
                 ListTxt[i].ReadOnly = true;
                 ListTxt[i].Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                ListTxt[i].TextAlign = HorizontalAlignment.Center;
                 panel_gameplay.Controls.Add(ListTxt[i]);
             }
 
@@ -448,7 +451,7 @@ namespace CS511.M21_BT03
                 }
             } while (!Check);
 
-            TimeLeft = 179;
+            TimeLeft = 180;
             timer1.Start();
 
             foreach (TextBox txt in ListTxt)
@@ -486,6 +489,51 @@ namespace CS511.M21_BT03
                 Exit_Click(sender, e);
             }
             TimeLeft--;
+        }
+        private bool KiemTraTextBoxDay()
+        {
+            foreach (TextBox txt in ListTxt)
+            {
+                if (txt.Text == "") return false;
+            }
+            return true;
+        }
+        private void btnGoiY_Click(object sender, EventArgs e)
+        {
+
+            if (TongXu >= 20)
+            {
+                TongXu -= 20;
+                for (int i = 0; i < ListTxt.Length; i++)
+                {
+                    if (ListTxt[i].Text == "")
+                    {
+                        foreach (Button btn in Listbtn)
+                        {
+                            if (btn.Text == KetQua[index][i].ToString() && btn.Visible)
+                            {
+                                ListTxt[i].Text = btn.Text;
+                                btn.Visible = false;
+                                break;
+                            }
+                        }
+                        if (ListTxt[i].Text == "") ListTxt[i].Text = KetQua[index][i].ToString();
+
+                        ListTxt[i].Click -= DuoiHinhBatChu_Click;
+                        ListTxt[i].ForeColor = Color.White;
+                        ListTxt[i].BackColor = Color.Black;
+                        ListTxt[i].Enabled = false;
+
+                        if (KiemTraTextBoxDay()) CheckResult(sender, e);
+
+
+
+                        break;
+                    }
+                }
+                label_coin.Text = "Tổng xu : " + TongXu.ToString();
+            }
+            else MessageBox.Show("Không đủ đồng xu!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         void Exit_Click(object sender, EventArgs e)
