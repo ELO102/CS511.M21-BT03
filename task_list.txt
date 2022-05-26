@@ -1,0 +1,18 @@
+- All page
+	+ Music on/off/next btn /
+- Main page
+	+ Start btn /
+	+ Leadboard btn /
+	+ Select subject /
+	+ Load
+- Game page
+	+ Big image/
+	+ Answer pick - IMG_name/
+	+ Save
+	+ Quit
+	+ Hint
+	+ Point/
+- End page
+	+ Name type -> Leadboard
+	+ Play again
+	+ Main page btn

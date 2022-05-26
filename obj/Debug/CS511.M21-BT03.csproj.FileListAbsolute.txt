@@ -9,3 +9,8 @@ E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.csproj.GenerateResour
 E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.csproj.CoreCompileInputs.cache
 E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.exe
 E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.pdb
+E:\Study\CS511.M21\CS511.M21-BT03\bin\Debug\Interop.WMPLib.dll
+E:\Study\CS511.M21\CS511.M21-BT03\bin\Debug\AxInterop.WMPLib.dll
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\Interop.WMPLib.dll
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\AxInterop.WMPLib.dll
+E:\Study\CS511.M21\CS511.M21-BT03\obj\Debug\CS511.M21-BT03.csproj.ResolveComReference.cache
